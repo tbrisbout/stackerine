@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import Fade from './Fade';
 import Button from './Button';
 
 const Section = styled.section`
@@ -10,8 +11,10 @@ const Section = styled.section`
 `;
 
 export default () => (
-  <Section className="App-body">
-    <p>Programme</p>
-    <Button>Ça m'intéresse</Button>
-  </Section>
+  <Fade>
+    <Section className="App-body">
+      <p>Programme</p>
+      <Button>Ça m'intéresse</Button>
+    </Section>
+  </Fade>
 );
