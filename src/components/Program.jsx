@@ -11,7 +11,7 @@ const Section = styled.section`
 
 export default () => (
   <Section className="App-body">
-    <p>Changez de vie en devenant développeuse web&nbsp;!</p>
+    <p>Programme</p>
     <Button>Ça m'intéresse</Button>
   </Section>
 );

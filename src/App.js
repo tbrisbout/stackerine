@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import AppHeader from './components/Header';
-import AppBody from './components/Body';
+import AppHome from './components/Home';
+import Program from './components/Program';
+import Faq from './components/Faq';
 import AppFooter from './components/Footer';
 
 const Div = styled.div`
@@ -22,11 +25,15 @@ const Div = styled.div`
 class App extends Component {
   render() {
     return (
-      <Div>
-        <AppHeader/>
-        <AppBody/>
-        <AppFooter/>
-      </Div>
+      <Router>
+        <Div>
+          <AppHeader/>
+          <Route exact path="/" component={AppHome} />
+          <Route path="/programme" component={Program} />
+          <Route path="/faq" component={Faq} />
+          <AppFooter/>
+        </Div>
+      </Router>
     );
   }
 }
