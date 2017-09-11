@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 import AppHeader from './components/Header';
 import AppHome from './components/Home';
@@ -25,15 +25,13 @@ const Div = styled.div`
 class App extends Component {
   render() {
     return (
-      <Router>
-        <Div>
-          <AppHeader/>
-          <Route exact path="/" component={AppHome} />
-          <Route path="/programme" component={Program} />
-          <Route path="/faq" component={Faq} />
-          <AppFooter/>
-        </Div>
-      </Router>
+      <Div>
+        <AppHeader/>
+        <Route exact path="/" component={AppHome} />
+        <Route path="/programme" component={Program} />
+        <Route path="/faq" component={Faq} />
+        <AppFooter/>
+      </Div>
     );
   }
 }
