@@ -8,10 +8,23 @@ const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   height: 80px;
   padding: 20px;
   width: 80%;
   box-shadow: 0 1px 0 rgba(211, 214, 219, 0.3);
+
+  & img {
+    height: auto;
+    max-height: 60px;
+    max-width: 100%;
+  }
+
+  @media (max-width: 700px) {
+    nav {
+      display: none;
+    }
+  }
 `;
 
 const NavItem = styled.li`
@@ -30,7 +43,7 @@ const NavItem = styled.li`
 export default () => (
   <Header>
     <Link to="/">
-      <img src={logo} style={{ height: 70 }} alt="logo" />
+      <img src={logo} alt="logo" />
     </Link>
     <nav>
       <ul>

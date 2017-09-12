@@ -1,8 +1,10 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const color = '#f5f7fa';
 
-export default styled.button`
+const Button = styled.button`
   width: 200px;
   padding: 10px;
   border: 2px solid ${color};
@@ -22,3 +24,8 @@ export default styled.button`
     outline: none;
   }
 `
+
+export default ({linkTo, children}) =>
+  <Link to={linkTo}>
+    <Button>{children}</Button>
+  </Link>

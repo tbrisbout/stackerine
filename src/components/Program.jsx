@@ -6,8 +6,12 @@ import Button from './Button';
 
 const Section = styled.section`
   font-weight: normal;
-  font-size: 40px;
+  font-size: 1.5em;
   text-align: center;
+
+  p {
+    margin: 10%;
+  }
 `;
 
 export default () => (
