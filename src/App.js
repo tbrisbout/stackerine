@@ -35,7 +35,7 @@ class App extends Component {
       <Div>
         <AppHeader/>
         <Route exact path="/" component={AppHome} />
-        <Route path="/programme" component={Program} />
+        <Route path="/programme/:section" component={Program} />
         <Route path="/faq" component={Faq} />
         <AppFooter/>
       </Div>
