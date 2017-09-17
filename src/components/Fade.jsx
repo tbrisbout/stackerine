@@ -13,17 +13,17 @@ const transitionStyles = {
   entered:  { opacity: 1 },
 };
 
-const Fade = ({ in: inProp, children }) => (
+const withFade = (Wrapped) => (props) => (
   <Transition in timeout={duration} appear>
     {(state) => (
       <div style={{
         ...defaultStyle,
         ...transitionStyles[state]
       }}>
-        {children}
+        <Wrapped {...props}/>
       </div>
     )}
   </Transition>
 );
 
-export default Fade;
+export default withFade;

@@ -7,6 +7,7 @@ import AppHome from './components/Home';
 import Program from './components/Program';
 import Faq from './components/Faq';
 import AppFooter from './components/Footer';
+import withFade from './components/Fade.jsx';
 
 const Div = styled.div`
   display: flex;
@@ -35,8 +36,8 @@ class App extends Component {
       <Div>
         <AppHeader/>
         <Route exact path="/" component={AppHome} />
-        <Route path="/programme/:section" component={Program} />
-        <Route path="/faq" component={Faq} />
+        <Route path="/programme/:section" component={withFade(Program)} />
+        <Route path="/faq" component={withFade(Faq)} />
         <AppFooter/>
       </Div>
     );

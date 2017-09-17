@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Fade from './Fade';
 import Button from './Button';
 
 const Section = styled.section`
@@ -49,9 +48,7 @@ const sections = {
 export default (
   { match: { params: { section } } } = { match: { params: {} } }
 ) => (
-  <Fade>
-    <Section className="App-body">
-      {sections[section || 'intro']}
-    </Section>
-  </Fade>
+  <Section className="App-body">
+    {sections[section || 'intro']}
+  </Section>
 );
