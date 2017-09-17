@@ -22,6 +22,7 @@ const Subscribe = styled.form`
     border-bottom-left-radius: 36px;
     font-size: 22px;
     text-align: center;
+    color: white;
 
     &::placeholder {
       color: white;
@@ -88,7 +89,7 @@ const sections = {
   inscription: (
     <div>
       <p>Entrez votre email et nous vous contacterons pour en discuter...</p>
-      <Subscribe method="POST" action="http://formspree.io/e3h6j0o0v4j5w3g6@stackerine.slack.com">
+      <Subscribe method="POST" action="//formspree.io/e3h6j0o0v4j5w3g6@stackerine.slack.com">
         <input type="email" name="email" placeholder="Mon email" required />
         <button type="submit">Go&nbsp;!</button>
       </Subscribe>
