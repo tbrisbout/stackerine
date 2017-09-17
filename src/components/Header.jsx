@@ -2,25 +2,25 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-import logo from '../stackerine-logo.png';
+import logo from '../stackerine-logo.svg';
 
 const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  height: 80px;
   padding: 20px;
   width: 80%;
   box-shadow: 0 1px 0 rgba(211, 214, 219, 0.3);
 
   & img {
     height: auto;
-    max-height: 60px;
     max-width: 100%;
   }
 
   @media (max-width: 700px) {
+    justify-content: center;
+
     nav {
       display: none;
     }
@@ -47,7 +47,7 @@ export default () => (
     </Link>
     <nav>
       <ul>
-        <NavItem><Link to="/programme">Programme</Link></NavItem>
+        <NavItem><Link to="/programme/intro">Programme</Link></NavItem>
         <NavItem><Link to="/faq">FAQ</Link></NavItem>
       </ul>
     </nav>
