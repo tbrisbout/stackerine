@@ -48,7 +48,7 @@ export default () => (
     <nav>
       <ul>
         <NavItem><Link to="/programme/intro">Programme</Link></NavItem>
-        <NavItem><Link to="/faq">FAQ</Link></NavItem>
+        <NavItem><Link to="/profils/intro">Profils</Link></NavItem>
       </ul>
     </nav>
   </Header>

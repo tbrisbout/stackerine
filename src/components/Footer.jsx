@@ -10,7 +10,7 @@ const Footer = styled.footer`
   box-shadow: 0 -1px 0 rgba(211, 214, 219, 0.3);
 
   @media (max-width: 700px) {
-    visibility: hidden;
+    display: none;
   }
 `;
 

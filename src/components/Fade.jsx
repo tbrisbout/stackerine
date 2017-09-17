@@ -6,6 +6,7 @@ const duration = 300;
 const defaultStyle = {
   transition: `opacity ${duration}ms ease-out`,
   opacity: 0,
+  flex: 1,
 }
 
 const transitionStyles = {

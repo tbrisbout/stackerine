@@ -5,7 +5,7 @@ import { Route } from 'react-router-dom';
 import AppHeader from './components/Header';
 import AppHome from './components/Home';
 import Program from './components/Program';
-import Faq from './components/Faq';
+import Profiles from './components/Profiles';
 import AppFooter from './components/Footer';
 import withFade from './components/Fade.jsx';
 
@@ -37,7 +37,7 @@ class App extends Component {
         <AppHeader/>
         <Route exact path="/" component={AppHome} />
         <Route path="/programme/:section" component={withFade(Program)} />
-        <Route path="/faq" component={withFade(Faq)} />
+        <Route path="/profils/:section" component={withFade(Profiles)} />
         <AppFooter/>
       </Div>
     );

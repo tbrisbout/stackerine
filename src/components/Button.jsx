@@ -18,6 +18,7 @@ const Button = styled.button`
   &:hover {
     background-color: ${color};
     color: rgba(246, 36, 89, 0.8);
+    cursor: pointer;
   }
 
   &:focus {
