@@ -91,6 +91,7 @@ const sections = {
       <p>Entrez votre email et nous vous contacterons pour en discuter...</p>
       <Subscribe method="POST" action="//formspree.io/e3h6j0o0v4j5w3g6@stackerine.slack.com">
         <input type="email" name="email" placeholder="Mon email" required />
+        <input type="hidden" name="_next" value="//tbrisbout.github.io/stackerine/merci" />
         <button type="submit">Go&nbsp;!</button>
       </Subscribe>
     </div>
