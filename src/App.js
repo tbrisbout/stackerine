@@ -26,6 +26,7 @@ const Div = styled.div`
   color: #f5f7fa;
 
   @media (max-width: 700px) {
+    height: auto;
     background:
       linear-gradient(rgba(25, 181, 254, 0.6), rgba(246, 36, 89, 0.6)),
       linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6));

@@ -10,9 +10,12 @@ const Section = styled.section`
   font-weight: normal;
   font-size: 1.5em;
   text-align: center;
-  top: 50%;
-  position: relative;
-  transform: translateY(-50%);
+  
+  @media (min-width: 700px) {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+  }
 
   p {
     margin: 10%;
@@ -58,6 +61,10 @@ const SectionContainer = styled.div`
   display: flex;
   flex-direction: row;
   color: #fff;
+  
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
 `;
 
 const ItemContent = styled.div`
