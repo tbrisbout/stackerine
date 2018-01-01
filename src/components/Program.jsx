@@ -2,11 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Button from './Button';
+import Dollar from '../assets/dollar.svg';
+import Career from '../assets/career.svg';
+import Web from '../assets/web.svg';
 
-const Section = styled.section`
+const Section = styled.section` 
   font-weight: normal;
   font-size: 1.5em;
   text-align: center;
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
 
   p {
     margin: 10%;
@@ -46,14 +52,46 @@ const Subscribe = styled.form`
     color: #f76363;
     cursor: pointer;
   }
+`;
+
+const SectionContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+`;
+
+const ItemContent = styled.div`
+    display: flex;
+    flex: 1 1 33%;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
 `
+
+
+const Icon = styled.img`
+  width: 100px;
+  height: 100px;
+`;
+
 
 const sections = {
   intro: (
     <div>
-      <p>Vous en avez assez d’être sous-payé et vous voulez avoir une vraie carrière&nbsp;?</p>
-      <p>Vous voulez vous investir dans un secteur qui ne connaît pas la crise&nbsp;?</p>
-      <p>Parce que le secteur de l’IT vous concerne aussi&nbsp;!</p>
+      <SectionContainer>
+        <ItemContent>
+          <Icon src={Career} alt={"career"}/>
+          <p>Vous en avez assez d’être sous-payé et vous voulez avoir une vraie carrière&nbsp;?</p>
+        </ItemContent>
+        <ItemContent>
+          <Icon src={Dollar} alt={"dollar"}/>
+          <p>Vous voulez vous investir dans un secteur qui ne connaît pas la crise&nbsp;?</p>
+        </ItemContent>
+        <ItemContent>
+          <Icon src={Web} alt={"web"}/>
+          <p>Parce que le secteur de l’IT vous concerne aussi&nbsp;!</p>
+        </ItemContent>
+      </SectionContainer>
       <Button linkTo="/programme/faits">Dites m'en plus</Button>
     </div>
   ),
@@ -72,7 +110,7 @@ const sections = {
     <div>
       <p>Nous nous rencontrons pour discuter de votre parcours, de vos attentes et de vos envies.</p>
       <p>Si cela fonctionne, nous vous formons pendant 100 jours au métier de développeur web.</p>
-      <p>Tout cela avec une embauche en CDI qui intervient avant le milieu de la formation.</p>
+      <p>Tout cela avec une embauche en CDI qui intervient dès le début de la formation.</p>
       <Button linkTo="/programme/missions">Et ensuite&nbsp;?</Button>
     </div>
   ),
@@ -89,7 +127,7 @@ const sections = {
   inscription: (
     <div>
       <p>Entrez votre email et nous vous contacterons pour en discuter...</p>
-      <Subscribe method="POST" action="//formspree.io/e3h6j0o0v4j5w3g6@stackerine.slack.com">
+      <Subscribe method="POST" action="//formspree.io/x4s6b9k8z8f5d6p8@stackerine.slack.com">
         <input type="email" name="email" placeholder="Mon email" required />
         <input type="hidden" name="_next" value="//tbrisbout.github.io/stackerine/merci" />
         <button type="submit">Go&nbsp;!</button>
