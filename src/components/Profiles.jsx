@@ -32,7 +32,7 @@ const sections = {
     <div>
       <h3>3 bonnes raisons de recruter une Stackerine&nbsp;:</h3>
       <p>Un profil formé sur les technologies du moment et les bonnes pratiques</p>
-      <p>Une addition qui permet d'augmenter le niveau global d'une équipe</p>
+      <p>Un profil qui permet d'augmenter le niveau global d'une équipe</p>
       <p>Un suivi et support technique du profil par nos experts</p>
       <Button linkTo="/profils/details">Plus de détails</Button>
     </div>
