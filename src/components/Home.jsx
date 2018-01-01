@@ -9,9 +9,11 @@ const Section = styled.section`
   flex-direction: column;
   justify-content: space-evenly;
   flex: 1;
-  font-weight: normal;
-  font-size: 40px;
   text-align: center;
+  font-size: 90px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 1.5;
 `;
 
 const BottomLink = styled.footer`
