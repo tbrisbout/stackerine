@@ -14,6 +14,7 @@ const Button = styled.button`
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
+  margin: 0 10px;
 
   &:hover {
     background-color: ${color};

@@ -15,7 +15,6 @@ const Div = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  height: 100%;
   background:
     linear-gradient(rgba(25, 181, 254, 0.6), rgba(246, 36, 89, 0.6)),
     linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),
@@ -24,9 +23,10 @@ const Div = styled.div`
   background-size: cover;
   font-family: 'Roboto', 'Arial';
   color: #f5f7fa;
+  height: 100%;
+  overflow: auto;
 
   @media (max-width: 700px) {
-    height: auto;
     background:
       linear-gradient(rgba(25, 181, 254, 0.6), rgba(246, 36, 89, 0.6)),
       linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6));
