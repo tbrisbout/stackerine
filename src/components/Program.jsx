@@ -1,6 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
 
+import { Section, SectionContainer, Title, ItemContent, Icon, Subscribe } from "./SectionContainer";
 import Button from './Button';
 import Dollar from '../assets/dollar.svg';
 import Career from '../assets/career.svg';
@@ -14,87 +14,6 @@ import Meeting from '../assets/meeting.svg';
 import Growing from '../assets/growing.svg';
 import Workgroup from '../assets/workGroup.svg';
 import Mission from '../assets/mission.svg';
-
-const Section = styled.section` 
-  font-weight: normal;
-  font-size: 1.5em;
-  text-align: center;
-  padding-bottom: 50px;
-  
-  @media (min-width: 700px) {
-    top: 50%;
-    position: relative;
-    transform: translateY(-50%);
-  }
-
-  p {
-    margin: 10%;
-  }
-`;
-
-const Subscribe = styled.form`
-  input {
-    height: 36px;
-    background: transparent;
-    border: 1px solid white;
-    border-top-left-radius: 36px;
-    border-bottom-left-radius: 36px;
-    font-size: 22px;
-    text-align: center;
-    color: white;
-
-    &::placeholder {
-      color: white;
-    }
-
-    &:focus {
-      outline: none;
-      border-color: #f76363;
-    }
-  }
-
-  button {
-    height: 40px;
-    width: 80px;
-    border: none;
-    background: white;
-    border-top-right-radius: 36px;
-    border-bottom-right-radius: 36px;
-    font-size: 22px;
-    text-align: center;
-    color: #f76363;
-    cursor: pointer;
-  }
-`;
-
-const SectionContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  color: #fff;
-  
-  @media (max-width: 700px) {
-    flex-direction: column;
-  }
-`;
-
-const ItemContent = styled.div`
-    display: flex;
-    flex: 1 1 33%;
-    flex-direction: column;
-    justify-content: baseline;
-    align-items: center;
-`
-
-
-const Icon = styled.img`
-  width: 100px;
-  height: 100px;
-`;
-
-const Title = styled.h3`
-  padding: 20px 0;
-  text-transform: uppercase;
-`
 
 
 const sections = {
@@ -181,7 +100,7 @@ const sections = {
         </ItemContent>
       </SectionContainer>
       <Button linkTo="/programme/process">⬅ Retour</Button>
-      <Button linkTo="/programme/inscription">Où je m'inscris&nbsp;?</Button>
+      <Button linkTo="/programme/inscription">En savoir plus...&nbsp;</Button>
     </div>
   ),
 
@@ -190,12 +109,13 @@ const sections = {
       <p>Entrez votre email et nous vous contacterons pour en discuter...</p>
       <Subscribe method="POST" action="//formspree.io/x4s6b9k8z8f5d6p8@stackerine.slack.com">
         <input type="email" name="email" placeholder="Mon email" required/>
+        <input type="hidden" name="_subject" value="New candidate" />
         <input type="hidden" name="_next" value="//tbrisbout.github.io/stackerine/merci"/>
         <button type="submit">Go&nbsp;!</button>
       </Subscribe>
     </div>
   )
-}
+};
 
 export default ({match: {params: {section}}} = {match: {params: {}}}) => (
   <Section className="App-body">

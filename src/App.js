@@ -7,7 +7,7 @@ import AppHome from './components/Home';
 import Program from './components/Program';
 import Profiles from './components/Profiles';
 import AppFooter from './components/Footer';
-import Thanks from './components/Thanks';
+import { ThankCandidate, ThankRecrute } from './components/Thanks';
 import withFade from './components/Fade.jsx';
 
 const Div = styled.div`
@@ -41,7 +41,8 @@ class App extends Component {
         <Route exact path="/" component={AppHome} />
         <Route path="/programme/:section" component={withFade(Program)} />
         <Route path="/profils/:section" component={withFade(Profiles)} />
-        <Route path="/merci" component={Thanks} />
+        <Route path="/merci" component={ThankCandidate} />
+        <Route path="/thank" component={ThankRecrute} />
         <AppFooter/>
       </Div>
     );

@@ -14,7 +14,7 @@ const Button = styled.button`
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
-  margin: 0 10px;
+  margin: 10px;
 
   &:hover {
     background-color: ${color};
@@ -25,7 +25,7 @@ const Button = styled.button`
   &:focus {
     outline: none;
   }
-`
+`;
 
 export default ({linkTo, children}) =>
   <Link to={linkTo}>
