@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import styled from 'styled-components';
 
 const color = '#f5f7fa';
@@ -27,7 +27,8 @@ const Button = styled.button`
   }
 `;
 
-export default ({linkTo, children}) =>
+export default ({ linkTo, children }) => (
   <Link to={linkTo}>
     <Button>{children}</Button>
   </Link>
+);
