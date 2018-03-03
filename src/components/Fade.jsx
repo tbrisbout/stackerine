@@ -11,17 +11,19 @@ const defaultStyle = {
 
 const transitionStyles = {
   entering: { opacity: 0 },
-  entered:  { opacity: 1 },
+  entered: { opacity: 1 },
 };
 
-const withFade = (Wrapped) => (props) => (
+const withFade = Wrapped => props => (
   <Transition in timeout={duration} appear>
-    {(state) => (
-      <div style={{
-        ...defaultStyle,
-        ...transitionStyles[state]
-      }}>
-        <Wrapped {...props}/>
+    {state => (
+      <div
+        style={{
+          ...defaultStyle,
+          ...transitionStyles[state],
+        }}
+      >
+        <Wrapped {...props} />
       </div>
     )}
   </Transition>

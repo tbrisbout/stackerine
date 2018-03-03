@@ -1,7 +1,6 @@
 import React from 'react';
 
-import {Section } from "./SectionContainer";
-
+import { Section } from './SectionContainer';
 
 export const ThankCandidate = () => (
   <Section>

@@ -14,7 +14,7 @@ const Section = styled.section`
   font-weight: 900;
   text-align: center;
   line-height: 1.5;
-  
+
   @media (max-width: 700px) {
     font-size: 50px;
   }
@@ -26,7 +26,7 @@ const BottomLink = styled.footer`
   a {
     color: white;
   }
-`
+`;
 
 export default () => (
   <Section className="App-body">

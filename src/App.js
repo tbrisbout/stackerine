@@ -27,9 +27,8 @@ const Div = styled.div`
   overflow: auto;
 
   @media (max-width: 700px) {
-    background:
-      linear-gradient(rgba(25, 181, 254, 0.6), rgba(246, 36, 89, 0.6)),
-      linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6));
+    background: linear-gradient(rgba(25, 181, 254, 0.6), rgba(246, 36, 89, 0.6)),
+      linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   }
 `;
 
@@ -37,13 +36,13 @@ class App extends Component {
   render() {
     return (
       <Div>
-        <AppHeader/>
+        <AppHeader />
         <Route exact path="/" component={AppHome} />
         <Route path="/programme/:section" component={withFade(Program)} />
         <Route path="/profils/:section" component={withFade(Profiles)} />
         <Route path="/merci" component={ThankCandidate} />
         <Route path="/thank" component={ThankRecrute} />
-        <AppFooter/>
+        <AppFooter />
       </Div>
     );
   }

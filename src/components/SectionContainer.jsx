@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-export const Section = styled.section` 
+export const Section = styled.section`
   font-weight: normal;
   font-size: 1.5em;
   text-align: center;
   padding-bottom: 50px;
-  
+
   @media (min-width: 700px) {
     top: 50%;
     position: relative;
@@ -25,8 +25,8 @@ export const Section = styled.section`
   }
 
   i {
-   font-size: 2.5em;
-   padding: 5px;
+    font-size: 2.5em;
+    padding: 5px;
   }
 `;
 
@@ -34,18 +34,18 @@ export const SectionContainer = styled.div`
   display: flex;
   flex-direction: row;
   color: #fff;
-  
+
   @media (max-width: 700px) {
     flex-direction: column;
   }
 `;
 
 export const ItemContent = styled.div`
-    display: flex;
-    flex: 1 1 33%;
-    flex-direction: column;
-    justify-content: baseline;
-    align-items: center;
+  display: flex;
+  flex: 1 1 33%;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
 `;
 
 export const Icon = styled.img`
@@ -56,7 +56,7 @@ export const Icon = styled.img`
 export const Title = styled.h3`
   padding: 20px 0;
   text-transform: uppercase;
-  
+
   strong {
     font-size: 50px;
   }
