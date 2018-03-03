@@ -16,7 +16,7 @@ const Footer = styled.footer`
 
 export default () => (
   <Footer>
-    <p>Thomas & Jonathan</p>
-    <p>Copyright 2017 Stackerine</p>
+    <p>Make with &#9829; with React</p>
+    <p>Copyright 2018 Stackerine</p>
   </Footer>
 );
