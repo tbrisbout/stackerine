@@ -15,11 +15,8 @@ const Div = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  background:
-    linear-gradient(rgba(25, 181, 254, 0.6), rgba(246, 36, 89, 0.6)),
-    linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),
-    // TODO too heavy image => 2.6Mo
-    url('/assets/photo-1441015401724-70d16b783f5c.jpeg');
+  background: linear-gradient(rgba(25, 181, 254, 0.6), rgba(246, 36, 89, 0.6)),
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/photo-1441015401724-70d16b783f5c-min.jpeg');
   background-size: cover;
   font-family: 'Roboto', 'Arial';
   color: #f5f7fa;
