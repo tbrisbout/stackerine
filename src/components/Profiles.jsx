@@ -27,12 +27,12 @@ const sections = {
           <p>Un suivi et support technique du profil par nos experts</p>
         </ItemContent>
       </SectionContainer>
-      <Button linkTo="/profils/details">Plus de détails</Button>
+      <Button linkTo="/profils/details#profiles-details">Plus de détails</Button>
     </div>
   ),
 
   details: (
-    <div>
+    <div id="profiles-details">
       <p>Les Stackerines sont opérationnelles sur les langages et frameworks suivants&nbsp;:</p>
       <ul>
         <li>
@@ -63,13 +63,13 @@ const sections = {
           <i className="devicon-docker-plain-wordmark" title="Docker" />
         </li>
       </ul>
-      <Button linkTo="/programme/intro">⬅ Retour</Button>
-      <Button linkTo="/profils/contact">C'est mon besoin&nbsp;</Button>
+      <Button linkTo="/programme/intro#profiles-intro">⬅ Retour</Button>
+      <Button linkTo="/profils/contact#profiles-contact">C'est mon besoin&nbsp;</Button>
     </div>
   ),
 
   contact: (
-    <div>
+    <div id="profiles-contact">
       <p>Entrez votre email et nous vous contacterons pour en discuter...</p>
       <Subscribe method="POST" action="//formspree.io/x4s6b9k8z8f5d6p8@stackerine.slack.com">
         <input type="email" name="email" placeholder="Mon email" required/>
