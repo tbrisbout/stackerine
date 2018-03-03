@@ -7,7 +7,8 @@ const defaultStyle = {
   transition: `opacity ${duration}ms ease-out`,
   opacity: 0,
   flex: 1,
-}
+  display: 'flex',
+};
 
 const transitionStyles = {
   entering: { opacity: 0 },
