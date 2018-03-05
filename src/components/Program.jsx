@@ -106,7 +106,7 @@ const sections = {
   inscription: (
     <div id="profil-inscription">
       <p>Entrez votre email et nous vous contacterons pour en discuter...</p>
-      <Subscribe method="POST" action="//formspree.io/x4s6b9k8z8f5d6p8@jsouied@stackerine.com">
+      <Subscribe method="POST" action="//formspree.io/jsouied@stackerine.com">
         <input type="email" name="email" placeholder="Mon email" required />
         <input type="hidden" name="_subject" value="New candidate" />
         <input type="hidden" name="_next" value="//stackerine.com/merci" />
