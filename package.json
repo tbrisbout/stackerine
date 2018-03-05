@@ -2,7 +2,7 @@
   "name": "stackerine-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tbrisbout.github.io/stackerine",
+  "homepage": "https://www.stackerine.com",
   "dependencies": {
     "devicon": "^2.0.0",
     "react": "^15.6.1",
