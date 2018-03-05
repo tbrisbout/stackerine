@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Section, SectionContainer, Title, ItemContent, Icon, Subscribe } from './SectionContainer';
-import Button from './Button';
+import Button, { LinkedBackButton } from './Button';
 import Dollar from '../assets/dollar.svg';
 import Career from '../assets/career.svg';
 import Web from '../assets/web.svg';
@@ -54,7 +54,7 @@ const sections = {
           <p>Les femmes disposent d’autant de capacités que les hommes</p>
         </ItemContent>
       </SectionContainer>
-      <Button linkTo="/programme/intro#profil-intro">⬅ Retour</Button>
+      <LinkedBackButton linkTo="/programme/intro#profil-intro">Retour</LinkedBackButton>
       <Button linkTo="/programme/process#profil-process">Et du coup&nbsp;?</Button>
     </div>
   ),
@@ -76,7 +76,7 @@ const sections = {
           <p>Tout cela avec une embauche en CDI qui intervient dès le début de la formation.</p>
         </ItemContent>
       </SectionContainer>
-      <Button linkTo="/programme/faits#profil-faits">⬅ Retour</Button>
+      <LinkedBackButton linkTo="/programme/faits#profil-faits">Retour</LinkedBackButton>
       <Button linkTo="/programme/missions#profil-missions">Et ensuite&nbsp;?</Button>
     </div>
   ),
@@ -98,7 +98,7 @@ const sections = {
           <p>Nous faisons un suivi régulier de l'évolution technique et salariale.</p>
         </ItemContent>
       </SectionContainer>
-      <Button linkTo="/programme/process#profil-process">⬅ Retour</Button>
+      <LinkedBackButton linkTo="/programme/process#profil-process">Retour</LinkedBackButton>
       <Button linkTo="/programme/inscription#profil-inscription">En savoir plus...&nbsp;</Button>
     </div>
   ),
@@ -106,7 +106,7 @@ const sections = {
   inscription: (
     <div id="profil-inscription">
       <p>Entrez votre email et nous vous contacterons pour en discuter...</p>
-      <Subscribe method="POST" action="//formspree.io/jsouied@stackerine.com">
+      <Subscribe method="POST" action="//formspree.io/x4s6b9k8z8f5d6p8@jsouied@stackerine.com">
         <input type="email" name="email" placeholder="Mon email" required />
         <input type="hidden" name="_subject" value="New candidate" />
         <input type="hidden" name="_next" value="//stackerine.com/merci" />

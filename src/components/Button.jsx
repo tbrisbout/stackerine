@@ -1,6 +1,7 @@
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import styled from 'styled-components';
+import BackArrow from '../assets/right-arrow.svg';
 
 const color = '#f5f7fa';
 
@@ -27,8 +28,27 @@ const Button = styled.button`
   }
 `;
 
-export default ({ linkTo, children }) => (
+const LinkedButton = ({ linkTo, children }) => (
   <Link to={linkTo}>
     <Button>{children}</Button>
   </Link>
 );
+
+const BackImage = styled.img`
+  max-width: 15px;
+  transform: rotateY(180deg);
+  vertical-align: bottom;
+  margin-right: 10px;
+`;
+
+const LinkedBackButton = ({ linkTo, children }) => (
+  <Link to={linkTo}>
+    <Button>
+      <BackImage alt="back" src={BackArrow} />
+      {children}
+    </Button>
+  </Link>
+);
+
+export default LinkedButton;
+export { LinkedBackButton };

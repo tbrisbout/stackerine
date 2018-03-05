@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Section, SectionContainer, Title, ItemContent, Icon, Subscribe } from './SectionContainer';
-import Button from './Button';
+import Button, { LinkedBackButton } from './Button';
 
 import Good from '../assets/good.svg';
 import Follow from '../assets/follow.svg';
@@ -63,7 +63,7 @@ const sections = {
           <i className="devicon-docker-plain-wordmark" title="Docker" />
         </li>
       </ul>
-      <Button linkTo="/programme/intro#profiles-intro">⬅ Retour</Button>
+      <LinkedBackButton linkTo="/programme/intro#profiles-intro">Retour</LinkedBackButton>
       <Button linkTo="/profils/contact#profiles-contact">C'est mon besoin&nbsp;</Button>
     </div>
   ),
@@ -71,10 +71,10 @@ const sections = {
   contact: (
     <div id="profiles-contact">
       <p>Entrez votre email et nous vous contacterons pour en discuter...</p>
-      <Subscribe method="POST" action="//formspree.io/x4s6b9k8z8f5d6p8@stackerine.slack.com">
-        <input type="email" name="email" placeholder="Mon email" required/>
+      <Subscribe method="POST" action="//formspree.io/jsouied@stackerine.com">
+        <input type="email" name="email" placeholder="Mon email" required />
         <input type="hidden" name="_subject" value="Need profil" />
-        <input type="hidden" name="_next" value="//tbrisbout.github.io/stackerine/thank"/>
+        <input type="hidden" name="_next" value="//stackerine.com/thank" />
         <button type="submit">Go&nbsp;!</button>
       </Subscribe>
     </div>

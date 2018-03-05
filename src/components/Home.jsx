@@ -15,8 +15,24 @@ const Section = styled.section`
   text-align: center;
   line-height: 1.5;
 
+  p {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    padding: 0 10px;
+  }
+
   @media (max-width: 700px) {
     font-size: 50px;
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    p {
+      font-size: 3.5rem;
+    }
   }
 `;
 
