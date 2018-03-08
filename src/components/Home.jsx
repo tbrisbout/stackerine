@@ -17,21 +17,14 @@ const Section = styled.section`
 
   p {
     font-family: 'Press Start 2P', cursive;
-    font-size: 2rem;
     padding: 0 10px;
   }
 
   @media (max-width: 700px) {
-    font-size: 50px;
+    font-size: 23px;
 
     p {
-      font-size: 1.5rem;
-    }
-  }
-
-  @media (min-width: 1000px) {
-    p {
-      font-size: 3.5rem;
+      font-size: 40px;
     }
   }
 `;
