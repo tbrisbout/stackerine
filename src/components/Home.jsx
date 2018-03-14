@@ -10,7 +10,6 @@ const Section = styled.section`
   justify-content: space-evenly;
   flex: 1;
   text-align: center;
-  font-size: 70px;
   font-weight: 900;
   text-align: center;
   line-height: 1.5;
@@ -20,9 +19,19 @@ const Section = styled.section`
     padding: 0 10px;
   }
 
-  @media (max-width: 700px) {
-    font-size: 23px;
+  @media (min-width: 400px) {
+    p {
+      font-size: 20px;
+    }
+  }
 
+  @media (min-width: 500px) {
+    p {
+      font-size: 26px;
+    }
+  }
+
+  @media (min-width: 700px) {
     p {
       font-size: 40px;
     }
