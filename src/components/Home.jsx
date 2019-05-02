@@ -9,9 +9,33 @@ const Section = styled.section`
   flex-direction: column;
   justify-content: space-evenly;
   flex: 1;
-  font-weight: normal;
-  font-size: 40px;
   text-align: center;
+  font-weight: 900;
+  text-align: center;
+  line-height: 1.5;
+
+  p {
+    font-family: 'Press Start 2P', cursive;
+    padding: 0 10px;
+  }
+
+  @media (min-width: 400px) {
+    p {
+      font-size: 20px;
+    }
+  }
+
+  @media (min-width: 500px) {
+    p {
+      font-size: 26px;
+    }
+  }
+
+  @media (min-width: 700px) {
+    p {
+      font-size: 40px;
+    }
+  }
 `;
 
 const BottomLink = styled.footer`
@@ -20,7 +44,7 @@ const BottomLink = styled.footer`
   a {
     color: white;
   }
-`
+`;
 
 export default () => (
   <Section className="App-body">

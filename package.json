@@ -2,11 +2,12 @@
   "name": "stackerine-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tbrisbout.github.io/stackerine",
+  "homepage": "https://www.stackerine.com",
   "dependencies": {
     "devicon": "^2.0.0",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "react-router-hash-link": "^1.2.0"
   },
   "devDependencies": {
     "gh-pages": "^1.0.0",
